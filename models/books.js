@@ -1,6 +1,9 @@
+// DEPENDENCIES
 const mongoose = require('mongoose')
 const { Schema } = mongoose 
 
+
+// SCHEMA
 const bookSchema = new Schema({
     title: String,
     description: String,
@@ -9,5 +12,6 @@ const bookSchema = new Schema({
     imageURL: String
 })
 
+// MODEL
 const Book = mongoose.model('Book', bookSchema)
 module.exports = Book
